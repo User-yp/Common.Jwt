@@ -17,7 +17,7 @@ namespace Common.Jwt
         /// <param name="c"></param>
         public static void AddAuthenticationHeader(this SwaggerGenOptions c)
         {
-            c.AddSecurityDefinition("Authorization", new Microsoft.OpenApi.Models.OpenApiSecurityScheme
+            c.AddSecurityDefinition("Authorization", new OpenApiSecurityScheme
             {
                 Description = "Authorization header. \r\nExample: 'Bearer 12345abcdef'",
                 Name = "Authorization",
